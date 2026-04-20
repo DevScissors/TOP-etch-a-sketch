@@ -7,9 +7,10 @@ gridSizeButton.addEventListener('click', () => {
     let size = prompt("Enter a grid size from 8-100");
     if (size < 8 || size > 100) {
         alert("Please choose a number between 8 and 100");
+    }
+    else {
         createGrid(size);
     }
-    createGrid(size);
 })
 
 resetButton.addEventListener('click', () => {
